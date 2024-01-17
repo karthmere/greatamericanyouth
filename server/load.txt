@@ -1,0 +1,5 @@
+.separator |
+.import messages.dat Messages
+
+PRAGMA foreign_keys = ON;
+

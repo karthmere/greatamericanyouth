@@ -1,0 +1,15 @@
+[Unit]
+Description=Server for GAY
+After=network.target
+
+[Service]
+User=eddie2
+Group=sudo
+WorkingDirectory=/var/www/greatamericanyouth/server
+ExecStart=/usr/bin/python3 /var/www/greatamericanyouth/server/app.py
+Restart=always
+RestartSec=5s
+Environment=JWT_TOKEN=120iqjwtkeyorsomething_
+
+[Install]
+WantedBy=multi-user.target

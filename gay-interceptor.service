@@ -1,0 +1,14 @@
+[Unit]
+Description=GAY metadata interceptor
+After=network.target
+
+[Service]
+User=eddie2
+Group=sudo
+WorkingDirectory=/var/www/greatamericanyouth/
+ExecStart=/usr/bin/node /var/www/greatamericanyouth/interceptor.js
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

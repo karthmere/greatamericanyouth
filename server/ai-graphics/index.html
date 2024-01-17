@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AI Graphics</title>
+  <meta charset="utf-8">
+  <!-- <link rel="shortcut icon" href="assets/gmd32.png" type="image/x-icon"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+  </main>
+  <footer>
+  </footer>
+  <div class="main-container">
+	  <div id="canvas"></div>
+      <h1>Parameters</h1>
+	  <div class="slider-container">
+		  <div class="slider-wrapper">
+			  <h2>Uniform Scale</h2>
+              <input type="range" min="0.1" step="0.01" max="10" value="1" class="slider" id="uniform-scale-slider" >
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Joint Scale</h2>
+              <input type="range" min="0.1" step="0.01" max="10" value="1" class="slider" id="joint-scale-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Ambient Light Level</h2>
+              <input type="range" min="0" step="0.01" max="20" value="0" class="slider" id="ambient-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Move in X direction</h2>
+              <input type="range" min="-50" step="0.01" max="100" value="0" class="slider" id="x-move-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Move in Y direction</h2>
+              <input type="range" min="-50" step="0.01" max="100" value="0" class="slider" id="y-move-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Move in Z direction</h2>
+              <input type="range" min="-50" step="0.01" max="100" value="0" class="slider" id="z-move-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Stretch in X direction</h2>
+              <input type="range" min="0" step="0.01" max="100" value="20" class="slider" id="x-stretch-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Stretch in Y direction</h2>
+              <input type="range" min="0" step="0.01" max="100" value="20" class="slider" id="y-stretch-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Stretch in Z direction</h2>
+              <input type="range" min="0" step="0.01" max="100" value="4" class="slider" id="z-stretch-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Joint Metallicity</h2>
+              <input type="range" min="0" step="0.01" max="2" value="1" class="slider" id="joint-metallicity-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Slowdown (ms)</h2>
+              <input type="range" min="0" step="1" max="100" value="0" class="slider" id="slowdown-slider">
+		  </div>
+		  <div class="slider-wrapper">
+			  <h2>Model</h2>
+              <select name="models" id="model-selection">
+              </select>
+		  </div>
+	  </div>
+      <!-- <h1 class="model-title">Model Selection</h1> -->
+      <!-- <div class="model-container"> -->
+      <!--     <label for="cars">Choose a model:</label> -->
+      <!-- </div> -->
+        <!-- <optgroup label="Swedish Cars"> -->
+        <!--   <option value="volvo">Volvo</option> -->
+        <!--   <option value="saab">Saab</option> -->
+        <!-- </optgroup> -->
+        <!-- <optgroup label="German Cars"> -->
+        <!--   <option value="mercedes">Mercedes</option> -->
+        <!--   <option value="audi">Audi</option> -->
+        <!-- </optgroup> -->
+      <!-- </select> -->
+      
+  </div>
+
+  <script src="index.js" type="module" defer></script>
+</body>
+
+</html>
